@@ -1,6 +1,6 @@
 export interface ICardInfo {
-  ccNumber: number;
-  ccCvv: number;
+  ccNumber: string;
+  ccCvv: string;
   ccName: string;
   ccExpiration: string;
 }
