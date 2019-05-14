@@ -12,8 +12,6 @@ export class CardCheckMiddleware implements NestMiddleware {
     const expirationValidation = cardValidation.expirationDate(
       cardInfo.ccExpiration,
     );
-    // tslint:disable-next-line:no-console
-    // console.log(cvvValidation);
 
     if (
       numberValidation.isValid &&
