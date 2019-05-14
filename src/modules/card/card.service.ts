@@ -11,8 +11,6 @@ export class CardService {
   ) {}
   storeCardInfo(cardInfo: ICardInfo): Promise<ICardInfoItem> {
     return new Promise((resolve, reject) => {
-      // tslint:disable-next-line:no-console
-      console.log(cardInfo);
       const cardInfoHashed: ICardInfo = {
         ccNumber: this.encryptIt(cardInfo.ccNumber),
         ccCvv: this.encryptIt(cardInfo.ccCvv),
