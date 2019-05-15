@@ -21,7 +21,7 @@ export class CardCheckMiddleware implements NestMiddleware {
     ) {
       next();
     } else {
-      res.status(401).json({ message: 'Not a valid Card' });
+      res.status(400).json({ message: 'Not a valid Card' });
     }
   }
 }
