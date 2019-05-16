@@ -11,8 +11,6 @@ export class CardController {
   // route just to verify the Card is alright, doesn't do anything, just returns ok or not (check middleware card-check)
   @Get()
   getCardInfo(@Req() req: Request, @Res() res: Response): Response {
-    // tslint:disable-next-line:no-console
-
     return res.status(200).json({ message: 'Credit card alright' });
   }
 
@@ -20,7 +18,7 @@ export class CardController {
   @Post()
   payment(
     @Body() cardInfo: ICardInfo,
-    @Req() req: Request,
+
     @Res() res: Response,
   ) {
     this.cardService
