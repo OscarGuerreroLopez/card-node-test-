@@ -18,12 +18,12 @@ export class CardController {
 
   // check middleware cause if the card is not valid we are not proceeding
   @Post()
-  async payment(
+  payment(
     @Body() cardInfo: ICardInfo,
     @Req() req: Request,
     @Res() res: Response,
   ) {
-    await this.cardService
+    this.cardService
       .storeCardInfo(cardInfo)
       .then(data => {
         return res.status(200).json({
