@@ -1,5 +1,7 @@
 ## Description
 
+This is a test I did for a company in 24 hours
+
 For this endpoint I used NestJS, that combines node, express and typescript.
 For the database I used mongodb, since I can create a Database on the cloud and for the shake of this test that was the fastest option. Wish I was able to use Postgres SQL.
 
